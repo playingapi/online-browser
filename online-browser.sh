@@ -81,8 +81,8 @@ case $choice in
             -e PUID=1000 \
             -e PGID=1000 \
             -e TZ=Etc/UTC \
-            -p 3000:3000 \
-            -p 3001:3001 \
+            -p 5000:3000 \
+            -p 5001:3001 \
             -v /chromium:/config \
             --shm-size="7gb" \
             --restart unless-stopped \
@@ -96,8 +96,8 @@ case $choice in
             -e PUID=1000 \
             -e PGID=1000 \
             -e TZ=Etc/UTC \
-            -p 3000:3000 \
-            -p 3001:3001 \
+            -p 5000:3000 \
+            -p 5001:3001 \
             -v /firefox:/config \
             --shm-size="7gb" \
             --restart unless-stopped \
@@ -111,8 +111,8 @@ case $choice in
             -e PUID=1000 \
             -e PGID=1000 \
             -e TZ=Etc/UTC \
-            -p 3000:3000 \
-            -p 3001:3001 \
+            -p 5000:3000 \
+            -p 5001:3001 \
             -v /opera:/config \
             --shm-size="7gb" \
             --restart unless-stopped \
@@ -126,8 +126,8 @@ case $choice in
             -e PUID=1000 \
             -e PGID=1000 \
             -e TZ=Etc/UTC \
-            -p 3000:3000 \
-            -p 3001:3001 \
+            -p 5000:3000 \
+            -p 5001:3001 \
             -v /mullvad-browser:/config \
             --shm-size="7gb" \
             --restart unless-stopped \
@@ -174,4 +174,4 @@ echo -e "    ${Red} ⠀⠈⠛⠦⣤⣤⣤⡤⠖⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
 sleep 0.1
 echo -e "    ${White}"
 sleep 0.1
-echo ""
+echo "view on port 5000"
